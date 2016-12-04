@@ -1,0 +1,300 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vh;
+}
+
+/* sidenav falta o js transitions hover links*/
+nav {
+  top: 0;
+  bottom: 5%;
+  height: 10%;
+  z-index: 1;
+}
+
+ul {
+  padding-left: 50%;
+  padding-top: 2%;
+  width: 100vh;
+  float: right;
+  position: absolute;
+  display: inline-flex;
+  background-color: white;
+  padding-right: 10%;
+}
+
+li a {
+  padding-left: 50%;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 26pt;
+  font-weight: bold;
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+}
+
+ul li img {
+  display: inline-block;
+  width: 2.5%;
+  height: auto;
+  top: 2%;
+  left: 3%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: line-through;
+  text-decoration-line: line-through 2px;
+  -webkit-transition: width 2s, height 4s;
+  /* Safari */
+  transition: width 2s, height 4s;
+}
+
+/*--- conection redes sociais--*/
+/*--------h1----*/
+.container h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 60pt;
+  font-weight: bolder;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+/*imagem de fundo da homepage em triangulo*/
+.pageOption {
+  overflow: hidden;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height: 90%;
+}
+
+.option, .option img {
+  width: 100%;
+  height: 100%;
+}
+
+.option {
+  overflow: hidden;
+  position: absolute;
+  opacity: 0.5;
+}
+
+/*---- about me section -- */
+.section {
+  height: 100vh;
+  margin-top: 20em;
+  margin-bottom: 3em;
+}
+
+.section p {
+  position: absolute;
+  padding-top: 20%;
+  left: 30%;
+  width: 40%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14pt;
+  font-weight: lighter;
+  line-height: 24pt;
+  text-align: justify;
+}
+
+/*----WORK ---*/
+.work {
+  margin-right: 2.5em;
+  margin-left: 4em;
+  margin-top: 7em;
+  padding: 5%;
+}
+
+.text {
+  display: block;
+  padding: 1%;
+  font-family: "Poppins", sans-serif;
+  font-size: 18pt;
+}
+
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 3;
+  -moz-column-gap: 0px;
+  column-count: 3;
+  column-gap: 0px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  display: block;
+  width: 70% !important;
+  height: auto !important;
+  margin: 2em;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}
+
+@media (max-width: 1000px) {
+  #photos {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media (max-width: 800px) {
+  #photos {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 400px) {
+  #photos {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+
+/*---- contact --*/
+.contact {
+  height: 100vh;
+  padding-top: 8%;
+}
+
+.contact .cd-form {
+  width: 90%;
+  max-width: 600px;
+  margin: 4em auto;
+}
+
+.contact .cd-form fieldset {
+  margin: 24px 0;
+}
+
+.contact .cd-form legend {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  border-bottom: 1px solid;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact .cd-form div {
+  /* form element wrapper */
+  position: relative;
+  margin: 20px 0;
+}
+
+.contact .cd-form .cd-label {
+  font-size: 1.3rem;
+  color: #94aab0;
+  margin-bottom: 10px;
+}
+
+.contact .cd-form input, .contact .cd-form textarea, .contact .cd-form select, .contact .cd-form label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  color: #2b3e51;
+}
+
+.contact .cd-form .cd-label {
+  display: block;
+}
+
+.contact .cd-form input[type="text"],
+.contact .cd-form input[type="email"],
+.contact .cd-form textarea,
+.contact .cd-form select,
+.contact .cd-form legend {
+  display: block;
+  width: 100%;
+}
+
+.contact .cd-form input[type="text"],
+.contact .cd-form input[type="email"],
+.contact .cd-form textarea,
+.contact .cd-form select {
+  /* general style for input elements */
+  padding: 12px;
+  border: 1px solid #cfd9db;
+  background-color: #ffffff;
+  border-radius: .25em;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+}
